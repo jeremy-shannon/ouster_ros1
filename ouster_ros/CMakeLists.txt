@@ -60,6 +60,7 @@ install(TARGETS os1_node
                 os1_cloud_node
                 viz_node
                 img_node
+                ouster_ros
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
