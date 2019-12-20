@@ -1,4 +1,4 @@
-#include <json/json.h>
+#include "jsoncpp/json/json.h"
 #include <algorithm>
 #include <array>
 #include <cerrno>
@@ -19,8 +19,8 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#include "ouster/os1.h"
-#include "ouster/os1_packet.h"
+#include "ouster_client/os1.h"
+#include "ouster_client/os1_packet.h"
 
 namespace ouster {
 namespace OS1 {

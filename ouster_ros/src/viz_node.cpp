@@ -14,8 +14,8 @@
 #include <thread>
 #include <utility>
 
-#include "ouster/os1_packet.h"
-#include "ouster/viz.h"
+#include "ouster_client/os1_packet.h"
+#include "ouster_viz/viz.h"
 #include "ouster_ros/OS1ConfigSrv.h"
 #include "ouster_ros/os1_ros.h"
 #include "ouster_ros/point_os1.h"

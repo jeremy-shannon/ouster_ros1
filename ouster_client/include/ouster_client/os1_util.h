@@ -10,7 +10,7 @@
 #include <iterator>
 #include <vector>
 
-#include "ouster/os1_packet.h"
+#include "ouster_client/os1_packet.h"
 
 namespace ouster {
 namespace OS1 {

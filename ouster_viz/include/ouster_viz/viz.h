@@ -8,7 +8,7 @@
 #include <memory>
 #include <vector>
 
-#include "ouster/lidar_scan.h"
+#include "lidar_scan.h"
 
 namespace ouster {
 namespace viz {

@@ -39,9 +39,9 @@
 #include <vtkVertexGlyphFilter.h>
 
 #include "colormaps.h"
-#include "ouster/lidar_scan.h"
-#include "ouster/os1_util.h"
-#include "ouster/viz.h"
+#include "ouster_viz/lidar_scan.h"
+#include "ouster_client/os1_util.h"
+#include "ouster_viz/viz.h"
 
 namespace ouster {
 namespace viz {

@@ -12,7 +12,7 @@
 #include <chrono>
 #include <string>
 
-#include "ouster/os1.h"
+#include "ouster_client/os1.h"
 #include "ouster_ros/PacketMsg.h"
 #include "ouster_ros/point_os1.h"
 

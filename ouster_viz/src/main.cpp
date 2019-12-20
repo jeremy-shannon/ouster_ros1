@@ -14,10 +14,10 @@
 #include <thread>
 #include <vector>
 
-#include "ouster/os1.h"
-#include "ouster/os1_packet.h"
-#include "ouster/os1_util.h"
-#include "ouster/viz.h"
+#include "ouster_client/os1.h"
+#include "ouster_client/os1_packet.h"
+#include "ouster_client/os1_util.h"
+#include "ouster_viz/viz.h"
 
 namespace OS1 = ouster::OS1;
 namespace viz = ouster::viz;

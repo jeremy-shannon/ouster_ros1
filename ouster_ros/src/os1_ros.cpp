@@ -4,9 +4,9 @@
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <cassert>
 
-#include "ouster/os1.h"
-#include "ouster/os1_packet.h"
-#include "ouster/os1_util.h"
+#include "ouster_client/os1.h"
+#include "ouster_client/os1_packet.h"
+#include "ouster_client/os1_util.h"
 #include "ouster_ros/os1_ros.h"
 
 namespace ouster_ros {

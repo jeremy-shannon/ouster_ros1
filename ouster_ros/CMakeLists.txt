@@ -1,13 +1,7 @@
 cmake_minimum_required(VERSION 3.1.0)
 project(ouster_ros)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_FLAGS         "${CMAKE_CXX_FLAGS} -Wall -Wextra")
-set(CMAKE_CXX_FLAGS_DEBUG   "-O0 -g")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
-
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(jsoncpp REQUIRED jsoncpp)
+add_compile_options(-std=c++11)
 
 find_package(catkin REQUIRED COMPONENTS
   message_generation
@@ -42,7 +36,7 @@ catkin_package(
     ouster_client ouster_viz
 )
 
-add_library(ouster_ros STATIC src/os1_ros.cpp)
+add_library(ouster_ros src/os1_ros.cpp)
 target_link_libraries(ouster_ros ${catkin_LIBRARIES})
 add_dependencies(ouster_ros ${PROJECT_NAME}_gencpp)
 
@@ -71,3 +65,9 @@ install(TARGETS os1_node
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 install(FILES os1.launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+  FILES_MATCHING PATTERN "*.h"
+  PATTERN ".svn" EXCLUDE
+)

@@ -3,8 +3,8 @@
 #include <iomanip>
 #include <iostream>
 
-#include "ouster/os1.h"
-#include "ouster/os1_packet.h"
+#include "ouster_client/os1.h"
+#include "ouster_client/os1_packet.h"
 
 namespace OS1 = ouster::OS1;
 

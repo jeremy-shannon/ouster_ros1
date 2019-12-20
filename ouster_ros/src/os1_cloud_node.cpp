@@ -11,8 +11,8 @@
 #include <tf2_ros/static_transform_broadcaster.h>
 #include <chrono>
 
-#include "ouster/os1_packet.h"
-#include "ouster/os1_util.h"
+#include "ouster_client/os1_packet.h"
+#include "ouster_client/os1_util.h"
 #include "ouster_ros/OS1ConfigSrv.h"
 #include "ouster_ros/PacketMsg.h"
 #include "ouster_ros/os1_ros.h"
