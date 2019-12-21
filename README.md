@@ -73,6 +73,20 @@ ping 10.5.5.87
 
 and we're good to go!
 
+### ROS Connection
+
+Now that we have a connection over the network, lets view some data. After building your catkin workspace with this package, source the install space. Run
+
+```
+
+roslaunch ouster_ros os1.launch os1_udp_dest:=10.5.5.1 os1_hostname:=10.5.5.87
+```
+
+Using the os1_udp_dest as the IP address of your computer (will be 10.5.5.1 if you follow the instructions above) and os1_hostname is the IP or `.local` of the lidar itself. This may change for each of you but should be something between 10.5.5.{50-100}. See the `dnsmasq` output or check with `nmap -SP 10.5.5.*/24`. 
+
+Now that your connection is up (hopefully), you can view this information in RViz. Open an RViz session and subscribe to the points and IMU topics in the laser frame.
+
+Have fun!
 
 
 ## Contents
