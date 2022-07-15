@@ -30,7 +30,7 @@ Now, lets setup the connection. At this point you may now plug in and power on y
 
 ```
 sudo ip link set [eth name] up
-sudo addr show dev [eth name]
+sudo ip addr show dev [eth name]
 ```
 
 The output you see from `show` should look something like `[eth name] ... state UP ...`. Its only important that you see `UP` now and not `DOWN`. At this point, you've setup the networking needed for the one time setup. 
